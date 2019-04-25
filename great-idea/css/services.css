@@ -32,8 +32,11 @@ body {
 	line-height: 1;
 }
 ol, ul {
-	list-style: none;
+	list-style: square;
+  padding: 20px 0px 20px 0px;
+  margin: 20px 0px 20px 20px;
 }
+
 blockquote, q {
 	quotes: none;
 }
@@ -60,147 +63,111 @@ html, body {
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 15px;
+    margin: 10px 0px 10px 0px;
 }
 
-/* Your code starts here! */
+h1 {
+  font-size: 30px;
+}
 
 .container {
-	width: 880px;
+  width: 900px;
 	/* border: 10px dashed black; */
 	margin: auto;
   display: flex;
   flex-flow: wrap;
+  justify-content: space-between;
+  align-content: center;
 }
 
 header {
-	/* border: 5px dashed orange; */
-	padding: 20px 20px 20px;
+  width: 100%;
   display: flex;
-  flex-flow: wrap;
+  margin: 20px 0px 20px 0px;
   align-items: center;
+  justify-content: space-between;
 }
 
 nav {
-	/* border: 3px solid red; */
+  padding: 0 25px 0px 0px;
 }
 
 nav a {
 	color: grey;
 	text-decoration: none;
-	padding: 0 25px 0px;
-	/* border: 3px solid blue; */
+	padding: 0 55px 0px 0px;
 }
 
-.intro-container {
-	text-align: center;
-  display: flex;
-  flex-flow: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-	/* border: 3px solid green; */
-}
-
-.intro  {
-	/* border: 4px dashed red; */
-	width: 450px;
-	text-align: center;
-	padding: 0px 0px 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
- .intro h1 {
-	font-size: 50pt;
-	/* border: 1px dashed red; */
-}  
-
-
-.introimg {
-	width: 30%;
-	/* border: 1px dashed red; */
-	/* TRBL*/
-	padding: 20px 10px 10px 20px;
-}
-
-.intro button {
+button {
+  width: 150px;
+  height: 35px;
 	padding: 5px 40px 5px;
+  margin: 10px 0px 10px 0px;
 	border: 1px solid black;
+  border-radius: 5px;
 	font-family: 'Titillium Web';
 }
 
-header p {
-	text-align: center;
-	border: 1px solid black;
-	width: 150px;
-}
-.codeimg {
-	width: 30%;
-	height: 30%;
-	/*TRBL*/
-	padding: 0 20px 20px 100px;
+p {
+  margin: 10px 0px 10px 0px;
 }
 
-.top-content {
-	border-top: 1px solid black;
-	padding: 30px 0 30px;
-  display: flex;
-  flex-flow: wrap;
-}
-
-
-.top-content .features {
-	/* border: 1px solid red; */
-	width: 49%;
-	margin-right: 5px;
-  
-}
-
-.top-content .about {
-	/* border: 1px solid red; */
-	width: 49%;
-}
-
-.middle-img {
-	display: block;
-	width: 100%;
-}
-
-.bottom-content {
-	border-bottom: 1px solid black;
-	padding: 20px 0 30px;
-  display: flex;
-  flex-flow: wrap;
-}
-
-.bottom-content .services {
-	width: 32%;
-	/* border: 1px solid red; */
-
-}
-
-.bottom-content .product {
-	width: 32%;
-	margin: 0px 10px 0px;
-}
-
-.bottom-content .vision {
-	width: 32%;
-}
-
-.contact-content {
-	margin-top: 30px;
+img.services-header-img {
+  margin: 10px 0px 10px 0px;
   width: 100%;
 }
 
-footer {
-  margin-bottom: 10%;
-  align-self: center;
+div.intro {
+  margin: 10px 0px 10px 0px;
+  padding: 20px 0px 20px 0px;
+  border-bottom: 1px solid black;
+}
+
+
+section.types {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border-bottom: 1px solid black;
+  justify-content: space-between;
+}
+
+section.types div {
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  padding: 10px 10px 10px 10px;
+  margin: 30px 10px 10px 10px;
+  border: 1px solid black;
+  background-color: lightgrey;
+  
+}
+
+section.facts-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.facts {
+
+}
+
+section.facts-section div.facts {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  justify-content: space-evenly;
+  margin: 10px; 0px; 10px; 0px;
 }
 
 footer {
   width: 100%;
   text-align: center;
   margin: 50px 0px 50px; 10px;
+}
+
+img.services-info-img {
+  width: 40%;
+  height: auto;
 }
